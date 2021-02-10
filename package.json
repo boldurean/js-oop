@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-temaplte",
+  "name": "js-oop",
   "version": "1.0.0",
-  "description": "nodejs-boilerplate",
+  "description": "js-oop",
   "main": "index.js",
   "directories": {
     "test": "__tests__"
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bdnvsy/nodejs-template.git"
+    "url": "git+https://github.com/bdnvsy/JS-OOP.git"
   },
   "author": "Vasilii Boldurean",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bdnvsy/nodejs-template/issues"
+    "url": "https://github.com/bdnvsy/JS-OOP/issues"
   },
-  "homepage": "https://github.com/bdnvsy/nodejs-template#readme",
+  "homepage": "https://github.com/bdnvsy/JS-OOP#readme",
   "type": "module",
   "jest": {
     "testEnvironment": "node",
