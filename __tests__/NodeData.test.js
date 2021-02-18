@@ -28,4 +28,3 @@ describe('Binary tree', () => {
     expect(tree.every(Number.isInteger)).toBeTruthy();
   });
 });
-
