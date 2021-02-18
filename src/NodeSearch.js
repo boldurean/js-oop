@@ -1,4 +1,4 @@
-export default class Node {
+export default class NodeSearch {
   constructor(key = null, leftNode = null, rigthNode = null) {
     this.key = key;
     this.leftNode = leftNode;

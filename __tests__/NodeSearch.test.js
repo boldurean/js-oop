@@ -1,8 +1,8 @@
-import Node from '../src/Node.js';
+import NodeSearch from '../src/NodeSearch.js';
 
 describe('Binary tree', () => {
   test('getters', () => {
-    const tree = new Node(9, new Node(4), new Node(17));
+    const tree = new NodeSearch(9, new NodeSearch(4), new NodeSearch(17));
 
     expect(tree.getKey()).toBe(9);
     expect(tree.getLeft().getKey()).toBe(4);
@@ -10,7 +10,7 @@ describe('Binary tree', () => {
   });
 
   test('empty tree', () => {
-    const tree = new Node();
+    const tree = new NodeSearch();
 
     expect(tree.getKey()).toBeNull();
     expect(tree.getLeft()).toBeNull();
@@ -18,15 +18,15 @@ describe('Binary tree', () => {
   });
 
   test('search', () => {
-    const expected1 = new Node(5);
-    const expected2 = new Node(22, new Node(20), null);
-    const tree = new Node(9,
-      new Node(4,
-        new Node(3),
-        new Node(6,
+    const expected1 = new NodeSearch(5);
+    const expected2 = new NodeSearch(22, new NodeSearch(20), null);
+    const tree = new NodeSearch(9,
+      new NodeSearch(4,
+        new NodeSearch(3),
+        new NodeSearch(6,
           expected1,
-          new Node(7))),
-      new Node(17,
+          new NodeSearch(7))),
+      new NodeSearch(17,
         null,
         expected2));
 
@@ -37,17 +37,17 @@ describe('Binary tree', () => {
   });
 
   test('search algorithm', () => {
-    const tree = new Node(9,
-      new Node(4,
-        new Node(6,
-          new Node(5),
-          new Node(7)),
-        new Node(3)),
-      new Node(17,
+    const tree = new NodeSearch(9,
+      new NodeSearch(4,
+        new NodeSearch(6,
+          new NodeSearch(5),
+          new NodeSearch(7)),
+        new NodeSearch(3)),
+      new NodeSearch(17,
         null,
-        new Node(22,
+        new NodeSearch(22,
           null,
-          new Node(20))));
+          new NodeSearch(20))));
 
     expect(tree.search(5)).toBeNull();
     expect(tree.search(7)).toBeNull();
